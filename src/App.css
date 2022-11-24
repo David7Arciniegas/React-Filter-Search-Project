@@ -1,38 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI";
+	box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.table-container {
+	width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-container table {
+	border-collapse: collapse;
+	width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table thead {
+	background-color: #bbb;
 }
 
-.App-link {
-  color: #61dafb;
+table th,
+table td {
+	padding: 10px;
+	text-align: left;
+	min-width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table th {
+	color: #121212;
+}
+
+tr {
+	border-bottom: 1px solid #bbb;
+}
+
+.search-container {
+	margin: 1rem 0;
+	width: 50%;
+}
+
+.search-container input {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	outline: none;
+	border: 1px solid #ccc;
 }
